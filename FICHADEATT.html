@@ -1,0 +1,36 @@
+<html>
+ <head>
+ <title>ATUALIZAÇÃO DO CASO</title>
+ <body>
+    <h1> ATUALIZAÇÃO DO CASO EPIDEMIOLÓGICO </h1> 
+    <tr>
+        <td>
+         <label>DIGITE O CPF DO PACIENTE ou NÚMERO DE PROTOCOLO DE ATENDIMENTO:  </label>
+        </td>
+        <p></p>
+        <td align="left">
+         <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+         <label>OU</label>
+         <td align="left">
+            <input type="text" name="ps" size="30" maxlength="30"> 
+        </td>
+       </tr>
+       <tr>
+    <h2> Classificação final do caso:  </h2><br />
+    <form action="Script_do_Formulario.php" method="post">
+        <label for="caso">Resultado:</label size="20">
+    </td>
+    <td align="left">
+     <select name="resultado"> 
+     <option value="co">CONFIRMADO</option> 
+     <option value="de">DESCARTADO</option> 
+     <option value="in">INDETERMINADO</option> 
+    </td>
+    <p></p>
+
+<input type="SUBMIT" value="ENVIAR">
+<input type="reset" value="LIMPAR">
+</form>
+
+</body>
+</html>

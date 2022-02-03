@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ <title> Suspeita de caso epidemiológico </title>
+ 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ </head>
+
+ <body>
+  <h1> Suspeita de caso epidemiológico </h1> 
+  <h2> Preencha o formulário abaixo de acordo com o caso epidemiológico a ser registrado</h2><br />
+
+<form action="Script_do_Formulario.php" method="post">
+    <label for="caso">CASO:</label size="20">
+</td>
+<td align="left">
+ <select name="caso"> 
+ <option value="ac">Acidentes por Animais Peçonhentos</option> 
+ <option value="al">Cólera</option> 
+ <option value="am">Coqueluche</option> 
+ <option value="ap">Dengue</option> 
+ <option value="ba">Diabetes Mellitus</option> 
+ <option value="ce">Difteria</option> 
+ <option value="df">Doença de Chagas</option> 
+ <option value="es">- Doenças Diarréicas Agudas</option> 
+ <option value="go">Doença Meningocócica</option> 
+ <option value="ma">Esquistossomose Mansônica</option> 
+ <option value="mt">Febre Amarela</option> 
+ <option value="ms">Febre Tifóide</option> 
+ <option value="mg">Hanseníase</option> 
+ <option value="pa">Hepatites Virais
+    Hepatite A
+    Hepatite B
+    Hepatite C
+    Hepatite D
+    Hepatite E</option> 
+ <option value="pb">Intoxicações por Agrotóxicos</option> 
+ <option value="pr"> Leishmaniose</option> 
+ <option value="pe">Leptospirose</option> 
+ <option value="pi">Malária</option> 
+ <option value="rj">Meningites</option> 
+ <option value="rn">Peste</option> 
+ <option value="ro">Poliomielite</option> 
+ <option value="rs">Raiva</option> 
+ <option value="rr">Rubeóla</option> 
+ <option value="sc">Sarampo</option> 
+ <option value="se">Sifilis</option> 
+ <option value="sp">Síndrome da Imunodeficiênica Adquirida</option> 
+ <option value="to">Tetano</option> 
+ <option value="ten">Tenísase</option> 
+ <option value="tub">Tuberculose</option> 
+ <option value="vir">Virose</option> 
+ <option value="vio">Lesão autoprovocada</option> 
+ <p></p>
+</select>
+</td>
+</tr>
+<p></p>
+<!-- DADOS PESSOAIS-->
+<fieldset>
+    <table cellspacing="12">
+    <legend>Dados do Paciente</legend>
+    <table cellspacing="12">
+     <tr>
+      <td>
+       <label for="nome">Nome: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="email">
+      </td>
+      <td>
+       <label for="sobrenome">Sobrenome: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="sobrenome">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label>Nascimento: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+      <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+      <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="rg">RG: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="rg" size="13" maxlength="13"> 
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label>CPF:</label>
+      </td>
+      <td align="left">
+       <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+      </td>
+     </tr>
+     <tr>
+        <td>
+         <label for="ps">Protocolo de atendimento na Unidade de Saúde: </label>
+        </td>
+        <td align="left">
+         <input type="text" name="ps" size="30" maxlength="30"> 
+        </td>
+       </tr>
+    </table>
+   </fieldset>
+</td>
+</tr>
+</table>
+</fieldset>
+<br />
+
+<input type="SUBMIT" value="ENVIAR">
+<input type="reset" value="LIMPAR">
+</form>
+
+</body>
+</html>
