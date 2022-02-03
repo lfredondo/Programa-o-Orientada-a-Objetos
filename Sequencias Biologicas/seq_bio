@@ -20,7 +20,7 @@ saida = open("arquivo2.fasta", "w")
 for c in SeqIO.parse(entrada,"fasta"):
     
 	#achar o genoma que comece e termine com essas sequencias de nucleotideos
-	if ( (len(c.seq) == ATGGAG ) and (c.seq[0] == CTTTGA )):
+	if ((c.seq) == ATGGAG ) and (c.seq[0] == CTTTGA ):
 		SeqIO.write(c, saida, "fasta")
 
 saida.close()
