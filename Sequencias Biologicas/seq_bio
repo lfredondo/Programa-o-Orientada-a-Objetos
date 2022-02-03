@@ -1,11 +1,26 @@
+##Larissa Favaro Redondo
+##Leitura de arquivo fasta de sequencias biologicas
+
 from Bio import SeqIO
-for i in SeqIO.parse("arquivo.fasta", "fasta"):
+for c in SeqIO.parse("arquivo.fasta", "fasta"):
 
-    # imprime o cabecalho
-    print(i.id)
+    #para ler o cabecalho
+    print(c.id)
 
-    # imprime a sequencia
-    print(i.seq)
+    #mostrar a sequencia_genoma
+    print(c.seq)
 
-    # imprime o tamanho da sequencia
-    print(len(i))
+    #mostrar o tamanho da sequencia
+    print(len(c))
+    
+
+entrada = open("arquivo.fasta","r")
+saida = open("arquivo2.fasta", "w")
+
+for c in SeqIO.parse(entrada,"fasta"):
+    
+	#achar o genoma que comece e termine com essas sequencias de nucleotideos
+	if ( (len(c.seq) == ATGGAG ) and (c.seq[0] == CTTTGA )):
+		SeqIO.write(c, saida, "fasta")
+
+saida.close()
