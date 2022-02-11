@@ -1,27 +1,6 @@
 ##Larissa Favaro Redondo
 ##Leitura de arquivo fasta de sequencias biologicas
 
-class SeqList():
-  
-  def __init__(self, arquivo,sequencia, chave):
-   self.arquivo
-   self.sequencia =sequencia
-   self.chave =chave
-  
-  def lefasta(arquivo):
-   arq = open(arquivo)
-   arq.readline()
-   sequencia = arq.readlines()  
-   arq.close()
-   return sequencia
-
-  def gravafasta(nome,sequencia):
-   arq = open(nome,'w')
-   arq.write("\n")
-   arq.write(sequencia)
-   arq.close()
-   
-
 from Bio import SeqIO
 for c in SeqIO.parse("arquivo.fasta", "fasta"):
 
